@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- title -->
+    <title>Nefu</title>
+</head>
+
+<body>
+<script>
+            PlaySound = function () {
+            var audio = new Audio('Sound.mp3');
+            audio.loop = false;
+            audio.play();
+            }
+</script>
+
+    <nav class="nav__bar">
+
+
+        <div class="nav__links">
+
+            <a href="#" class="link">
+                Nefu - 2023.10.21.
+            </a>
+        </div>
+
+    </nav>
+
+    <div class="hero__section">
+
+        <h1 class="heading">
+            <button class="span2" onclick="PlaySound()">Lejátszás</button>
+        </h1>
+
+
+    </div>
+
+    <div class="floating-left"></div>
+    <div class="floating-right"></div>
+
+</body>
+
+</html>
