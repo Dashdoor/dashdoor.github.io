@@ -2,6 +2,15 @@ function calc(ore, air, gold) {
     let counter = oreNeeded = airNeeded = 0;
     let profit = gold;
 
+    if (ore === "420" && gold === "420" && air === "420") {
+        document.querySelector(".eredmeny").innerHTML = `<div class="valasz">Dannte?</div>`;
+        return false;
+    } else if ((ore === "0" || ore === "") || (air === "0" || air === "") || (gold === "0" || gold === "")) {
+        return false;
+    } else if ((ore <= 0 || ore >= 100000) || (air <= 0 || air >= 100000) || (gold <= 0 || gold >= 100000)) {
+        return false;
+    }
+
     for (let i = 0; gold > 0; i++) {
         gold = gold - (ore * 14 + air / 5)
         if (gold > 0) {

@@ -1,4 +1,5 @@
 h1,
+h2,
 input::-webkit-input-placeholder,
 button {
     font-family: 'roboto', sans-serif;
@@ -14,6 +15,20 @@ h1 {
     width: 100%;
     font-size: 18px;
     background-image: url("img/yrel.png");
+    color: rgb(255, 255, 255);
+    line-height: 150%;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+h2 {
+    height: 100px;
+    width: 100%;
+    font-size: 18px;
+    background-image: url("img/cloth.png");
+    background-size: cover;
     color: rgb(255, 255, 255);
     line-height: 150%;
     border-radius: 3px 3px 0 0;
