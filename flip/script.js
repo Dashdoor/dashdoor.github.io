@@ -13,9 +13,5 @@ function calc(ore, air, gold) {
     airNeeded = Math.ceil((counter * 2) / 10);
     profit = counter * 25 - profit;
 
-    document.querySelector(".eredmeny").innerHTML = `
-<div> Darab: ${counter}</div>
-<div> Saronite Ore: ${oreNeeded}</div>
-<div> Eternal Air: ${airNeeded}</div>
-<div> Profit: ${profit}</div>`;
+    document.querySelector(".eredmeny").innerHTML = `<div class="valasz"> Darab: ${counter}</div><div class="valasz"> Saronite Ore: ${oreNeeded}</div><div class="valasz"> Eternal Air: ${airNeeded}</div><div class="valasz"> Profit: ${profit} <img src="img/money-gold.gif" alt=""></div>`;
 }

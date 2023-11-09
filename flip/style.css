@@ -19,6 +19,7 @@ h1 {
 }
 
 form {
+    position: relative;
     box-sizing: border-box;
     width: 260px;
     margin: 100px auto 0;
@@ -78,4 +79,27 @@ button {
         transform: translateY(-3px);
         box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
     }
+}
+
+.eredmeny {
+    font-size: 14px;
+    color: rgb(70, 70, 70);
+    font-family: 'roboto', sans-serif;
+    margin: 20px 25px;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    color: darken(#346bcf, 20%);
+    transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
+}
+
+.ribbon {
+    position: absolute;
+    bottom: -4px;
+    right: 0px;
+}
+
+.valasz {
+    padding-block: 5px;
 }
