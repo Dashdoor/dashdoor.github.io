@@ -85,7 +85,8 @@ button {
     }
 }
 
-.eredmeny {
+.eredmeny,
+.eredmeny2 {
     font-size: 14px;
     color: rgb(70, 70, 70);
     font-family: 'roboto', sans-serif;
@@ -97,6 +98,7 @@ button {
     color: darken(#346bcf, 20%);
     transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
 }
+
 
 .ribbon {
     position: absolute;
