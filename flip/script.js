@@ -15,3 +15,11 @@ function calc(ore, air, gold) {
 
     document.querySelector(".eredmeny").innerHTML = `<div class="valasz"> Darab: ${counter}</div><div class="valasz"> Saronite Ore: ${oreNeeded}</div><div class="valasz"> Eternal Air: ${airNeeded}</div><div class="valasz"> Profit: ${profit} <img src="img/money-gold.gif" alt=""></div>`;
 }
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}

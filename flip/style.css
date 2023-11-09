@@ -5,6 +5,10 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
+#myDIV {
+    display: none;
+}
+
 h1 {
     height: 100px;
     width: 100%;
