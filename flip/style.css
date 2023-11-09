@@ -1,0 +1,105 @@
+h1,
+input::-webkit-input-placeholder,
+button {
+    font-family: 'roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    height: 100px;
+    width: 100%;
+    font-size: 18px;
+    background-image: url("img/yrel.png");
+    color: rgb(255, 255, 255);
+    line-height: 150%;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+form {
+    position: relative;
+    box-sizing: border-box;
+    width: 260px;
+    margin: 100px auto 0;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+    border-radius: 3px;
+
+    h1 {
+        box-sizing: border-box;
+        padding: 20px;
+    }
+}
+
+input {
+    margin: 40px 25px;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px #346bcf;
+    transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #346bcf, 4%);
+    background-position: -200px 0;
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    color: darken(#346bcf, 20%);
+
+    &:focus,
+    &:valid {
+        box-shadow: none;
+        outline: none;
+        background-position: 0 0;
+
+        &::-webkit-input-placeholder {
+            color: #346bcf;
+            ;
+            font-size: 0px;
+            transform: translateY(-20px);
+            visibility: visible !important;
+        }
+    }
+}
+
+button {
+    border: none;
+    background: #346bcf;
+    ;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 200px;
+    color: white;
+    margin-left: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+.eredmeny {
+    font-size: 14px;
+    color: rgb(70, 70, 70);
+    font-family: 'roboto', sans-serif;
+    margin: 20px 25px;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    color: darken(#346bcf, 20%);
+    transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
+}
+
+.ribbon {
+    position: absolute;
+    bottom: -4px;
+    right: 0px;
+}
+
+.valasz {
+    padding-block: 5px;
+}
